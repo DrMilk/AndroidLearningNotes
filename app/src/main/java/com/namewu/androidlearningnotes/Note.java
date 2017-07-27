@@ -7,7 +7,6 @@ package com.namewu.androidlearningnotes;
 public class Note {
     private String title;
     private String context;
-
     public Note(String title, String context) {
         this.title = title;
         this.context = context;
