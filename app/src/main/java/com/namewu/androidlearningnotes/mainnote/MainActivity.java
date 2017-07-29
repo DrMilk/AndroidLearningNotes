@@ -1,9 +1,11 @@
-package com.namewu.androidlearningnotes;
+package com.namewu.androidlearningnotes.mainnote;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+
+import com.namewu.androidlearningnotes.R;
 
 import java.util.ArrayList;
 

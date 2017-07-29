@@ -1,4 +1,4 @@
-package com.namewu.androidlearningnotes;
+package com.namewu.androidlearningnotes.mainnote;
 
 /**
  * Created by Administrator on 2017/7/26.
