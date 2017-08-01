@@ -36,4 +36,9 @@ public class MainActivity extends AppCompatActivity {
         StaggeredGridLayoutManager staggeredGridLayoutManager=new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
         recyclerview.setLayoutManager(staggeredGridLayoutManager);
     }
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        // TODO Auto-generated method stub
+        super.onSaveInstanceState(outState);
+    }
 }
