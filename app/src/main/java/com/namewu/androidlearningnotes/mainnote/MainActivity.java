@@ -1,11 +1,13 @@
 package com.namewu.androidlearningnotes.mainnote;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import com.namewu.androidlearningnotes.R;
+import com.namewu.androidlearningnotes.onetofivenote.TwoNoteAsyncTaskActivity;
 
 import java.util.ArrayList;
 
@@ -32,6 +34,18 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         recyclerview = (RecyclerView) findViewById(R.id.recycler_show);
         recycleviewAdapter = new RecycleviewAdapter(this,listdata);
+        recycleviewAdapter.setItemOnClickListenner(new RecycleviewAdapter.ItemOnClickListenner() {
+            @Override
+            public void onItemClickListenner(RecycleviewAdapter.MyViewHolder viewHolder, int postion) {
+                boolean status = false;
+                Intent it = new Intent();
+                switch (postion){
+                    case 1:it.setClass(MainActivity.this, TwoNoteAsyncTaskActivity.class);status=true;break;
+                }
+                if (status)
+                startActivity(it);
+            }
+        });
         recyclerview.setAdapter(recycleviewAdapter);
         StaggeredGridLayoutManager staggeredGridLayoutManager=new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
         recyclerview.setLayoutManager(staggeredGridLayoutManager);

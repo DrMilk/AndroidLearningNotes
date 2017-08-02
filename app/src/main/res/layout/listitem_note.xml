@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
     <LinearLayout
+        android:id="@+id/listitem_note_linear"
         android:background="@drawable/category_selection_gridview_bg"
         android:padding="10dp"
         android:layout_width="match_parent"
