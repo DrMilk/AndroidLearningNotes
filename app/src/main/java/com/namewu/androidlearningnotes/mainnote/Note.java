@@ -5,6 +5,7 @@ package com.namewu.androidlearningnotes.mainnote;
  */
 
 public class Note {
+    private static final String TAG = "Note";
     private String title;
     private String context;
     public Note(String title, String context) {
