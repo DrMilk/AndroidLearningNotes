@@ -17,6 +17,7 @@ import java.util.ArrayList;
  */
 
 public class RecycleviewAdapter extends RecyclerView.Adapter<RecycleviewAdapter.MyViewHolder>{
+    private static final String TAG = "RecycleviewAdapter";
     private final int NORMAL_TYPE = 1;
     private final int HEAD_TYPE = 0;
     private final int FOOT_TYPE = 2;
