@@ -8,6 +8,7 @@ import android.os.Bundle;
  */
 
 public class ThreeNoteRxjava extends Activity{
+    private static final String TAG = "ThreeNoteRxjava";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
