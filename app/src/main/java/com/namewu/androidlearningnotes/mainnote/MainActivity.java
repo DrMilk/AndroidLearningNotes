@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         listdata.add(new Note("金刚狼领导机构阿娇可怜","天气没号阿发恶法俄法阿违法阿违法噶我额天气没" +
                 "号阿发恶法俄法阿违法阿违法噶我额天气没号阿发恶法俄法阿违法阿违法噶我额"));
         listdata.add(new Note("振宇","阿尔法阿额额阿我为 "));
-        listdata.add(new Note("哈哈哈哈","恶搞瓦罐煨个噶we噶围观然后他哈饿好热"));
+        listdata.add(new Note("笔记四","触发广播"));
     }
 
     private void initView() {
@@ -40,10 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 boolean status = false;
                 Intent it = new Intent();
                 switch (postion){
-                    case 1:it.setClass(MainActivity.this, TwoNoteAsyncTaskActivity.class);status=true;break;
+                    case 1:it.setClass(MainActivity.this, TwoNoteAsyncTaskActivity.class);startActivity(it);break;
+                    case 3:it.setAction("BROADCAST_ACTION");sendBroadcast(it);break;
                 }
-                if (status)
-                startActivity(it);
             }
         });
         recyclerview.setAdapter(recycleviewAdapter);
