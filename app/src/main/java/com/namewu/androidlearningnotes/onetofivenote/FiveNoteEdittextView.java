@@ -5,4 +5,6 @@ package com.namewu.androidlearningnotes.onetofivenote;
  */
 
 public class FiveNoteEdittextView {
+    private static final String TAG = "FiveNoteEdittextView";
+
 }
